@@ -1,0 +1,34 @@
+.container_left {
+    display: grid;
+    justify-content: center;
+}
+
+.button_start{
+    padding: 20px 50px;
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border-radius: 20px 20px 20px 20px;
+    border: none;
+    align-self: end;
+    font-size: 20px; 
+}
+.button_start:hover{
+    color: black;
+  }
+
+.titel_of_record_results{
+    display: grid;
+    justify-content: center; 
+    align-self: end; 
+}
+
+.container_record_results {
+    display: grid;
+    justify-content: center;
+    align-self: start; 
+}
+
+.listItem{
+    display: grid;
+    justify-content: end; 
+}

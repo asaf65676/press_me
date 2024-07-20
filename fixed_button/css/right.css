@@ -1,0 +1,40 @@
+.container_right {
+    display: grid;
+}
+
+.div_time_3_s {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0 60px 0;
+    font-size: 20px;
+
+}
+
+.div_button_play {
+    display: flex;
+    justify-content: center;
+}
+
+.button_play {
+    border-radius: 150px;
+    width: 215px;
+    height: 215px;
+    background-image: linear-gradient(to bottom right, #fbdb89, #f48982);
+    color: white;
+    border: none;
+    font-size: 30px; 
+}
+
+.button_play:hover{
+    color: black;
+}
+
+.container_div_10_s {
+    display: flex;
+    justify-content: center;
+    margin: 80px 0 0 0;
+}
+
+.div_count_10_s{
+    margin: 0 60px 0 0;
+}

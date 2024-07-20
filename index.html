@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק</title>
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        function openPage(pageNumber) {
+            if (pageNumber === 1) {
+                window.location.href = "fixed_button/fixed_button.html";
+            } else if (pageNumber === 2) {
+                window.location.href = "move_button/move_button.html";
+            } else {
+                window.location.href = "default.html";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="div_button_fixed_button">
+        <button class="fixed_button" onclick="openPage(1)">לחץ כאן</button>
+    </div>
+    <div class="div_button_move_button">
+        <button class="move_button" onclick="openPage(2)">קפוץ לי</button>
+    </div>
+</body>
+
+
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>לחץ עלי</title>
+    <link rel="stylesheet" href="css/body.css">
+    <link rel="stylesheet" href="css/left.css">
+    <link rel="stylesheet" href="css/right.css">
+
+</head>
+
+<body>
+    <header class="header_container">
+
+        <div class="container_left">
+
+            <button class="button_start" id="button_start" onclick="Start_game()">
+                התחל משחק
+            </button>
+
+            <div class="titel_of_record_results">
+                <h3>טבלת ניקוד</h3>
+            </div>
+            <div class="container_record_results">
+                <div id="record_results"></div>
+            </div>
+
+        </div>
+        <div class="container_right" id="container_right">
+            <div class="=container_right_r" id="container_right_r">
+
+            </div>
+
+        </div>
+    </header>
+</body>
+
+<script src="js/start_play.js"></script>
+<script src="js/button_play.js"></script>
+<script src="js/pop_up_comments.js"></script>
+<script src="js/display_score_table.js"></script>
+<script src="js/array_score_tablesort_sort.js"></script>
+
+<script>
+    var storedArray = JSON.parse(localStorage.getItem("score_tablesort_fixed_button"));
+    var score_tablesort_fixed_button = storedArray || [];
+
+    for (var i = 0; i < 5; i++) {
+        if (score_tablesort_fixed_button[i] === undefined) {
+            score_tablesort_fixed_button[i] = {number: 0, name:""};
+        }
+    }
+
+    localStorage.setItem("score_tablesort_fixed_button", JSON.stringify(score_tablesort_fixed_button));
+    console.log(score_tablesort_fixed_button);
+</script>
+
+</html>

@@ -1,0 +1,30 @@
+body {
+    height: 82.9vh;
+    background-color:#f9f5f3;
+    margin: 0;
+    border-width: 55px;
+    border-left: 80px;
+    border-right: 80px;
+    border-style: solid;
+    border-image: linear-gradient(to bottom right, #fbdb89, #f48982)1;
+}
+
+.header_container {
+    height: 83vh;
+    display: flex;
+    flex: 1;
+}
+
+.container_left,
+.container_right {
+    flex: 2;
+}
+
+.container_right{
+    flex: 4;
+    position: relative;
+    height: 80vh;
+
+
+}
+
