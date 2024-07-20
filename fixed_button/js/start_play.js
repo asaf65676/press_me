@@ -1,4 +1,13 @@
+var timer_3_s
+
+window.onload = function () {
+    let start = false;
+    let start_game = document.getElementById("button_start");
+    start_game.addEventListener("click", Start_game);
+}
+
 function Start_game() {
+    clearInterval(timer_3_s);
     document.getElementById("container_right_r").remove();
 
     var container_right_r = document.createElement("div");
@@ -15,14 +24,14 @@ function Start_game() {
     // ספירה לאחור 3 שניות, ומציג את הזמן שנשאר על המסך
     var time_left = 3;
     div_time_3_s.textContent = time_left;
-    var timer_3_s = setInterval(function () {
+    timer_3_s = setInterval(function () {
         time_left--;
 
         if (time_left <= 0) {
             clearInterval(timer_3_s);
             button_play_fun(button_play,
-                function (maxClicks) {
-                    pop_up_comments(maxClicks);
+                function (clicks) {
+                    pop_up_comments(clicks);
                 });
             div_time_3_s.textContent = "!!! התחל";
         }
